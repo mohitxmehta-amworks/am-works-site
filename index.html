@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AM Works — Financial & Operations Consulting</title>
+  <title>Room of Requirement — Financial & Operations Consulting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
@@ -54,14 +54,21 @@
     }
 
     .nav-logo {
-      font-family: var(--f-display);
-      font-size: 1.8rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
       text-decoration: none;
     }
-    .nav-logo span { color: var(--accent); }
+    .nav-logo svg { flex-shrink: 0; }
+    .nav-logo-text {
+      font-family: var(--f-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      line-height: 1.15;
+    }
+    .nav-logo-text .of { color: var(--accent); font-weight: 500; }
 
     .nav-links {
       display: flex; gap: 2.5rem; list-style: none;
@@ -833,13 +840,20 @@
     }
 
     .footer-logo {
-      font-family: var(--f-display);
-      font-size: 1.3rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
     }
-    .footer-logo span { color: var(--accent); }
+    .footer-logo svg { flex-shrink: 0; }
+    .footer-logo-text {
+      font-family: var(--f-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      line-height: 1.15;
+    }
+    .footer-logo-text .of { color: var(--accent); font-weight: 500; }
 
     .footer-links {
       display: flex; gap: 2rem; list-style: none;
@@ -922,7 +936,17 @@
 
   <!-- NAV -->
   <nav>
-    <a class="nav-logo" href="#">AM<span>.</span>Works</a>
+    <a class="nav-logo" href="#">
+      <svg width="28" height="38" viewBox="0 0 60 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="22" width="60" height="60" rx="0" fill="#1B3A6B"/>
+        <path d="M0,22 Q0,0 30,0 Q60,0 60,22 Z" fill="#1B3A6B"/>
+        <rect x="7" y="28" width="46" height="48" rx="2" fill="#2468CC"/>
+        <path d="M7,28 Q7,10 30,10 Q53,10 53,28 Z" fill="#4A99E8"/>
+        <circle cx="42" cy="56" r="3" fill="#C8D6E5"/>
+        <line x1="7" y1="50" x2="53" y2="50" stroke="#4A99E8" stroke-width="0.5" opacity="0.4"/>
+      </svg>
+      <div class="nav-logo-text">Room <span class="of">of</span><br>Requirement</div>
+    </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#how">How We Work</a></li>
@@ -948,7 +972,7 @@
         <em>You run the company.</em>
       </h1>
       <p class="hero-sub">
-        AM Works takes on the financial, operational, and compliance load for growing companies. One point of contact. Full coverage.
+        Room of Requirement takes on the financial, operational, and compliance load for growing companies. One point of contact. Full coverage.
       </p>
       <div class="hero-actions">
         <a class="btn-primary" href="#services">See Our Services</a>
@@ -961,7 +985,7 @@
         <div class="hero-stat-label">Back Office Coverage</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num">ONE</div>
+        <div class="hero-stat-num">1</div>
         <div class="hero-stat-label">Point of Contact</div>
       </div>
     </div>
@@ -1012,7 +1036,7 @@
         </li>
         <li>
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-          <div><strong style="color:#0B1929;font-weight:500;display:block;margin-bottom:0.2rem;">Financial blind spots</strong>No clean books means guesswork on decisions and harder investor conversations.</div>
+          <div><strong style="color:#0B1929;font-weight:500;display:block;margin-bottom:0.2rem;">Fuzzy financials</strong>No clean books means guesswork on decisions and harder investor conversations.</div>
         </li>
       </ul>
     </div>
@@ -1062,7 +1086,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <div class="service-name">Compliance &amp; Tax</div>
-        <p class="service-desc">Entity filings, registered agent, state compliance, sales tax nexus, and CPA coordination across C-Corps, LLCs, 501(c)3s, 501(c)4s, and PACs.</p>
+        <p class="service-desc">Entity filings, registered agent, state compliance, sales tax nexus, and CPA coordination across C-Corps and LLCs.</p>
         <div class="service-tags">
           <span class="service-tag">Entity Management</span>
           <span class="service-tag">Sales Tax</span>
@@ -1132,9 +1156,9 @@
       </div>
       <div>
         <h2 class="about-name">Mohit Mehta</h2>
-        <div class="about-title">CEO, AM Works</div>
+        <div class="about-title">CEO, Room of Requirement</div>
         <p class="about-bio">Most small and mid-sized companies are run by strong operators who are quietly absorbing all the financial and compliance work themselves. The back office is usually the last thing to get professionalized — and the first to create real problems.</p>
-        <p class="about-bio" style="margin-top:1rem;">Mohit has spent over a decade in operations across startups, venture studios, and established businesses — managing financial infrastructure across multiple entity types and over $50M in combined revenue. AM Works came out of that experience.</p>
+        <p class="about-bio" style="margin-top:1rem;">Mohit has spent over a decade in operations across startups, venture studios, and established businesses — managing financial infrastructure across multiple entity types and over $50M in combined revenue. Room of Requirement came out of that experience.</p>
         <p class="about-bio" style="margin-top:1rem;">We work alongside your lawyers, CPAs, and leadership team. The goal is straightforward: make sure the operational foundation is as solid as the business itself.</p>
         <div class="about-values">
           <span class="about-value">Financial Management</span>
@@ -1156,7 +1180,7 @@
         <p class="contact-body">Tell us a bit about your company and what you're dealing with. We'll set up a discovery conversation to see if we're a fit — no pressure, no pitch deck.</p>
         <div class="contact-detail">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96f9e6f3e4f7e2fff9f8e5d6f7fbbbe1f9e4fde5b8eeefec">[email&#160;protected]</a>
+          operations@roomofrequirement.co
         </div>
         <div class="contact-detail" style="margin-top:0.4rem;">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -1202,7 +1226,7 @@
           <button type="submit" class="form-submit">Send Message</button>
         </form>
         <div class="form-success" id="formSuccess">
-          ✓ &nbsp;Thanks — your message has been sent to <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="264956435447524f49485566474b0b5149544d55085e5f5c">[email&#160;protected]</a></strong>. We'll be in touch within one business day.
+          ✓ &nbsp;Thanks — your message has been sent to <strong>operations@roomofrequirement.co</strong>. We'll be in touch within one business day.
         </div>
       </div>
     </div>
@@ -1210,17 +1234,26 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">AM<span>.</span>Works</div>
+    <div class="footer-logo">
+      <svg width="24" height="32" viewBox="0 0 60 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="22" width="60" height="60" rx="0" fill="#1B3A6B"/>
+        <path d="M0,22 Q0,0 30,0 Q60,0 60,22 Z" fill="#1B3A6B"/>
+        <rect x="7" y="28" width="46" height="48" rx="2" fill="#2468CC"/>
+        <path d="M7,28 Q7,10 30,10 Q53,10 53,28 Z" fill="#4A99E8"/>
+        <circle cx="42" cy="56" r="3" fill="#C8D6E5"/>
+      </svg>
+      <div class="footer-logo-text">Room <span class="of">of</span><br>Requirement</div>
+    </div>
     <ul class="footer-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#how">Approach</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="footer-copy">© 2026 AM Works. All rights reserved.</div>
+    <div class="footer-copy">© 2026 Room of Requirement. All rights reserved.</div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // Intersection Observer for scroll reveals
     const reveals = document.querySelectorAll('.reveal');
 
@@ -1375,7 +1408,7 @@
       const entity  = document.getElementById('entity').value;
       const message = document.getElementById('message').value;
 
-      const mailto = `mailto:operations@am-works.xyz`
+      const mailto = `mailto:operations@roomofrequirement.co`
         + `?subject=New Inquiry from ${encodeURIComponent(fname + ' ' + lname)}`
         + `&body=${encodeURIComponent(
             `Name: ${fname} ${lname}\nEmail: ${email}\nCompany: ${company}\nEntity Type: ${entity}\n\nMessage:\n${message}`
