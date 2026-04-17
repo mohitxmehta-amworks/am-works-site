@@ -159,6 +159,25 @@
     }
     .mobile-drawer.open { transform: translateX(0); }
 
+    .mobile-drawer-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding-bottom: 1.75rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .mobile-drawer-brand svg { flex-shrink: 0; }
+    .mobile-drawer-brand-text {
+      font-family: var(--f-display);
+      font-size: 1.55rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--white);
+      line-height: 1.15;
+    }
+    .mobile-drawer-brand-text .of { color: var(--accent); font-weight: 500; }
+
     .mobile-drawer-links {
       list-style: none;
       display: flex;
@@ -1068,6 +1087,17 @@
   <!-- MOBILE DRAWER -->
   <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
   <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="mobile-drawer-brand">
+      <svg width="40" height="55" viewBox="0 0 60 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="22" width="60" height="60" rx="0" fill="#1B3A6B"/>
+        <path d="M0,22 Q0,0 30,0 Q60,0 60,22 Z" fill="#1B3A6B"/>
+        <rect x="7" y="28" width="46" height="48" rx="2" fill="#2468CC"/>
+        <path d="M7,28 Q7,10 30,10 Q53,10 53,28 Z" fill="#4A99E8"/>
+        <circle cx="42" cy="56" r="3" fill="#C8D6E5"/>
+        <line x1="7" y1="50" x2="53" y2="50" stroke="#4A99E8" stroke-width="0.5" opacity="0.4"/>
+      </svg>
+      <div class="mobile-drawer-brand-text">Room <span class="of">of</span><br>Requirement</div>
+    </div>
     <ul class="mobile-drawer-links">
       <li><a href="#services" data-drawer-link>Services</a></li>
       <li><a href="#how" data-drawer-link>How We Work</a></li>
