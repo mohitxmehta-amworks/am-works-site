@@ -1160,8 +1160,8 @@
         <h2 class="about-name">Mohit Mehta</h2>
         <div class="about-title">CEO, Room of Requirement</div>
         <p class="about-bio">Most small and mid-sized companies are run by strong operators who are quietly absorbing all the financial and compliance work themselves. The back office is usually the last thing to get professionalized — and the first to create real problems.</p>
-        <p class="about-bio" style="margin-top:1rem;">Mohit has spent over a decade in operations across startups, venture studios, and established businesses — managing financial infrastructure across multiple entity types and over $50M in combined revenue. Room of Requirement came out of that experience.</p>
-        <p class="about-bio" style="margin-top:1rem;">We work alongside your lawyers, CPAs, and leadership team. The goal is straightforward: make sure the operational foundation is as solid as the business itself.</p>
+        <p class="about-bio" style="margin-top:1rem;">Mohit has spent over a decade in operations across startups, venture studios, and established businesses — managing financial infrastructure across multiple entity types and over $50M in combined revenue. <em>Room of Requirement</em> came out of that experience.</p>
+        <p class="about-bio" style="margin-top:1rem;">We work alongside your lawyers, CPAs, and leadership team. The goal is straightforward - make sure the operational foundation is as solid as the business itself.</p>
         <div class="about-values">
           <span class="about-value">Financial Management</span>
           <span class="about-value">Operations</span>
@@ -1350,8 +1350,7 @@
         cursor.x = e.touches[0].clientX - rc.left;
         cursor.y = e.touches[0].clientY - rc.top;
         cursor.on = true;
-        e.preventDefault();
-      }, { passive: false });
+      }, { passive: true });
       hero.addEventListener('touchend', () => { cursor.on = false; });
 
       function drawBlob(x, y, r, col, alpha) {
