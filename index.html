@@ -1022,9 +1022,10 @@
     /* ── RESPONSIVE ───────────────────────────────────────── */
     @media (max-width: 1024px) {
       .services-grid { grid-template-columns: repeat(2, 1fr); }
-      .how-grid { grid-template-columns: repeat(2, 1fr); border-bottom: 1px solid rgba(255,255,255,0.08); }
-      .how-step { border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .how-grid { grid-template-columns: repeat(2, 1fr); }
+      .how-step { border-bottom: 1px solid #C8D6E5; }
       .how-step:nth-child(even) { border-right: none; }
+      .how-step:nth-last-child(-n+2) { border-bottom: none; }
       .serve-cards { grid-template-columns: repeat(2, 1fr); }
       .about-grid { grid-template-columns: 1fr; gap: 3rem; }
       .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
@@ -1040,7 +1041,9 @@
       .problem-grid { grid-template-columns: 1fr; gap: 3rem; }
       .services-header { grid-template-columns: 1fr; gap: 1.5rem; }
       .services-grid { grid-template-columns: 1fr; }
-      .how-grid { grid-template-columns: 1fr; }
+      .how-step { border-right: none; border-bottom: 1px solid #C8D6E5; }
+      .how-step:nth-last-child(-n+2) { border-bottom: 1px solid #C8D6E5; }
+      .how-step:last-child { border-bottom: none; }
       .how-step { border-right: none; }
       .serve-cards { grid-template-columns: 1fr 1fr; }
       .hero-stats { position: static; flex-direction: row; margin-top: 3rem; }
